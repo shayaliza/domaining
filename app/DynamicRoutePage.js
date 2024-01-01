@@ -23,7 +23,12 @@ const DynamicRoutePage = () => {
           onChange={(e) => setName(e.target.value)}
         />
       </label>
-      <button onClick={handleButtonClick}>Greet</button>
+      <button
+        onClick={handleButtonClick}
+        className="border-spacing-2 text-cyan-500 border-r-2 border-red-500 border-2 font-extrabold px-3"
+      >
+        Greet Page
+      </button>
 
       {/* Display the dynamic greeting */}
       {name && <p>Hi, {name}!</p>}
